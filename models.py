@@ -3,7 +3,6 @@ from sqlalchemy import Column, String, Integer, create_engine,Date
 from flask_sqlalchemy import SQLAlchemy
 import json
 from datetime import date
-from config import setup
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
 
