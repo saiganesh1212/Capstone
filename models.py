@@ -16,11 +16,12 @@ def setup_db(app, database_path=database_path):
     db.app = app
     db.init_app(app)
     db.create_all()
+    db_initiate()
 
 def db_drop_and_create_all():
     db.drop_all()
     db.create_all()
-    db_initiate()
+    
 
 def db_initiate():
     actor=Actors(name="Ganesh",age=22,Gender="Male")
